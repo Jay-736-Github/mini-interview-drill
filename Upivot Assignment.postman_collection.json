@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "701814e4-d8a3-44f0-90f1-ea62337bb882",
+		"name": "Upivot Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36350730"
+	},
+	"item": [
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drills",
+			"item": [
+				{
+					"name": "List Drills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/drills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"drills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drill by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/drills/68c66bfd74038b4847f4e7ec",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"drills",
+								"68c66bfd74038b4847f4e7ec"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attempts",
+			"item": [
+				{
+					"name": "Submit Attempt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"drillId\": \"{{drillId}}\",\n  \"answers\": [\n    { \"qid\": \"q1\", \"text\": \"This is my answer for question 1 using javascript and xml.\" },\n    { \"qid\": \"q2\", \"text\": \"My answer for question 2 is about component state.\" },\n    { \"qid\": \"q3\", \"text\": \"My answer for question 3.\" },\n    { \"qid\": \"q4\", \"text\": \"My answer for question 4.\" },\n    { \"qid\": \"q5\", \"text\": \"My answer for question 5.\" }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/attempts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"attempts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List My Attempts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/attempts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"attempts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "drillId",
+			"value": "PASTE_A_DRILL_ID_HERE"
+		}
+	]
+}

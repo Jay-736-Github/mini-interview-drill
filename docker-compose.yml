@@ -1,0 +1,35 @@
+services:
+  # Backend API service (Node.js + Express)
+  api:
+    build: ./api
+    container_name: upivot_api_service
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+    env_file:
+      - ./api/.env
+    # Ensure Redis is healthy before starting the API
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  # Frontend service (production build served via Nginx)
+  web:
+    build: ./web
+    container_name: upivot_web_service
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+
+  # Redis service with health checks for reliable startup
+  redis:
+    image: redis:alpine
+    container_name: upivot_redis_service
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

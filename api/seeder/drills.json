@@ -1,0 +1,138 @@
+[
+  {
+    "title": "React JS Drill",
+    "difficulty": "Easy",
+    "tags": ["React", "Frontend"],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "What is JSX?",
+        "keywords": ["JavaScript", "XML", "syntax", "React.createElement"]
+      },
+      {
+        "id": "q2",
+        "prompt": "Explain the concept of State in React.",
+        "keywords": ["state", "data", "changes", "re-render", "component"]
+      },
+      {
+        "id": "q3",
+        "prompt": "What are Props in React?",
+        "keywords": [
+          "properties",
+          "pass",
+          "data",
+          "parent",
+          "child",
+          "read-only"
+        ]
+      },
+      {
+        "id": "q4",
+        "prompt": "What is the Virtual DOM?",
+        "keywords": [
+          "virtual",
+          "DOM",
+          "in-memory",
+          "representation",
+          "performance"
+        ]
+      },
+
+      {
+        "id": "q5",
+        "prompt": "Describe the component lifecycle.",
+        "keywords": ["mounting", "updating", "unmounting", "lifecycle"]
+      }
+    ]
+  },
+  {
+    "title": "Node JS Drill",
+    "difficulty": "Easy",
+    "tags": ["Node.js", "Backend"],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "What is the event loop?",
+        "keywords": [
+          "event",
+          "loop",
+          "non-blocking",
+          "asynchronous",
+          "single-threaded"
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "What is the difference between `require` and `import`?",
+        "keywords": ["CommonJS", "ESM", "modules", "require", "import"]
+      },
+      {
+        "id": "q3",
+        "prompt": "What are streams in Node.js?",
+        "keywords": ["streams", "data", "chunks", "readable", "writable"]
+      },
+      {
+        "id": "q4",
+        "prompt": "How do you handle errors in asynchronous code?",
+        "keywords": ["callbacks", "promises", "async", "await", "try-catch"]
+      },
+      {
+        "id": "q5",
+        "prompt": "Explain middleware in the context of Express.",
+        "keywords": ["middleware", "request", "response", "next", "function"]
+      }
+    ]
+  },
+  {
+    "title": "Database Drill",
+    "difficulty": "Easy",
+    "tags": ["Database", "Backend", "SQL"],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "What are database indexes and how do they work?",
+        "keywords": ["index", "B-tree", "query", "performance", "scan"]
+      },
+      {
+        "id": "q2",
+        "prompt": "Explain database normalization (1NF, 2NF, 3NF).",
+        "keywords": ["normalization", "redundancy", "dependency", "keys"]
+      },
+      {
+        "id": "q3",
+        "prompt": "What is a database transaction and what are ACID properties?",
+        "keywords": [
+          "transaction",
+          "ACID",
+          "atomicity",
+          "consistency",
+          "isolation",
+          "durability"
+        ]
+      },
+      {
+        "id": "q4",
+        "prompt": "Describe the difference between SQL and NoSQL databases.",
+        "keywords": [
+          "SQL",
+          "NoSQL",
+          "relational",
+          "non-relational",
+          "schema",
+          "scalability"
+        ]
+      },
+      {
+        "id": "q5",
+        "prompt": "What is an N+1 query problem and how do you solve it?",
+        "keywords": [
+          "N+1",
+          "query",
+          "performance",
+          "eager loading",
+          "lazy loading"
+        ]
+      }
+    ]
+  }
+]
