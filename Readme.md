@@ -118,3 +118,8 @@ k6 run k6/script.js
 ## 📊 Lighthouse Score
 
 A Lighthouse audit was performed on a production build of the dashboard page, demonstrating excellent performance and adherence to modern best practices.(The screenshot is present in docs folder named LightHouse_Screenshot).
+
+## Loom Video Link 
+```
+https://www.loom.com/share/a47122ac416744ab8d88b0683a641722?sid=ae166575-adea-4d41-a5bd-e0899371129c
+```
